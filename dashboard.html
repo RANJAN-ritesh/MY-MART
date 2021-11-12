@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MODESENS</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+    <style>
+        *{
+            font-family: 'Roboto', sans-serif;
+        }
+        .navbar{
+            display:flex;
+            flex-direction: row;
+            border-bottom: 1px solid black;
+            position:sticky;
+            background-color: white;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 10;
+            box-shadow: 1px 1px 2px 0px black;
+        }
+        .navbarone{
+            width:10%;
+            border:0px solid black;
+            margin-left: 1%;
+        }
+       .navbarone>img{
+         width:100%
+       }
+        .navbartwo{
+            width: 50%;
+            margin: auto 1.5%;
+            display:flex;
+            flex-direction: row;
+        }
+         /* Style The Dropdown Button */
+         .dropbtn {
+          background-color: white;
+          color: black;
+          padding: 10px;
+          margin:2px 10px;
+          font-size: 16px;
+          border: none;
+          cursor: pointer;
+        }
+        
+        /* The container <div> - needed to position the dropdown content */
+        .dropdown {
+          position: relative;
+          display: inline-block;
+        }
+        
+        /* Dropdown Content (Hidden by Default) */
+        .dropdown-content {
+          display: none;
+          position: absolute;
+          background-color: whitesmoke;
+          border:0px solid black;
+          width:280px;
+          min-width: 160px;
+          box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+          z-index: 1;
+        }
+        
+        /* Links inside the dropdown */
+        .dropdown-content a {
+          color: black;
+          padding: 12px 16px;
+          text-decoration: none;
+          display: block;
+        }
+        
+        /* Change color of dropdown links on hover */
+        .dropdown-content a:hover {
+            background-color: #f1f1f1
+        }
+        
+        /* Show the dropdown menu on hover */
+        .dropdown:hover .dropdown-content {
+          display: block;
+        }
+        
+        /* Change the background color of the dropdown button when the dropdown content is shown */
+        .dropdown:hover .dropbtn {
+          background-color: black;
+          color:white
+        }
+
+       .navbarthree{
+           width:28%;
+           border:0px solid black;
+           display:flex;
+           flex-direction: row;
+           padding:15px ;
+           align-self: flex-end;
+           margin-left: 80px;
+           padding-left: 140px;
+       }
+       #dest{
+           padding:5px;
+           background:black;
+           color:white;
+           font-size: 12px;
+           margin:16px 25px
+       }
+       #icons1{
+           font-size:40px ;
+           margin: 0px 10px;
+       }
+       #searchbar{
+           width:100px;
+           height:40px;
+           border:0px solid black;
+           text-align: top;
+           
+           font-size: 14px;
+       }
+       #searchwala{
+           margin:12px 20px;
+       }
+       ::placeholder{
+          font-size: 20px;
+          color:black;
+      }
+       #icons1{
+           margin-top: 8px;
+       }
+       
+
+       .middlebody{
+           width:95%;
+           margin:auto;
+           margin-left: 7%;
+           margin-top: 100px;
+       }
+       #middlebodyone{
+           width:90%;
+           margin:auto;
+           margin-top: 40px;
+           position:relative;
+       }
+       #middlebody2{
+        width:1300px;
+        height:500px;
+       display:flex;
+       flex-direction: row;
+       padding:10px;
+       border:0px solid black;
+       margin:auto;
+  }
+  #middlebody2>div{
+      width:600px;
+      height:500px;
+      text-align: center;
+      border:2px solid brown;
+      margin:5px 20px;
+  }
+  #middlebody2>div>img{
+      width:400px;
+      height: 400px;
+  }
+  h1{
+      color:black;
+  }
+      
+       #hello{
+           color:#ff3b3b;
+           font-size: 100px;
+           position:absolute;
+           left:20px;
+           bottom:-60px;
+           font-family: sans-serif;
+       }
+       .middle2{
+           display:flex;
+           margin:40px;
+           margin-left: 100px;
+           border:0px solid black;
+           padding:30px;
+           padding-left: 100px;
+       }
+       .middle2>div{
+           margin:5px 20px;
+           text-align: center;
+       }
+       #img1{
+           width:500px;
+           height:550px;
+       }
+       #img2{
+           width:500px;
+           height: 550px;
+       }
+       .middle2>div>a>button{
+          width:100px;
+          border:none;
+          font-size: 16px;
+          height: 50px;
+          background-color: black;
+          color:white;
+       }
+       .middle3{
+           display:flex;
+           width:70%;
+           margin:auto;
+          background-color: whitesmoke;
+           border:0px solid black;
+           padding:30px;
+           padding-right: 20px;
+           /* padding-left: 100px; */
+       }
+       .middle3>div{
+           margin:5px 20px;
+           text-align: center;
+       }
+       .middle3>div>a>button{
+          width:100px;
+          border:none;
+          font-size: 16px;
+          height: 50px;
+          background-color: black;
+          color:white;
+       }
+       #thebut{
+           margin-top: 105px;
+       }
+       .middle3>div:nth-child(2)>img{
+           width:600px;
+           margin-top: 20px;
+       }
+       .bottom{
+           display:flex;
+           width:95%;
+          background-color: white;
+           border:1px solid black;
+           border-left: none;
+            border-right: none;
+           margin:auto;
+           margin-top: 70px;
+           padding:30px;
+           padding-right: 20px;
+           margin-bottom: 15px;
+           /* padding-left: 100px; */
+       }
+       .bottom>div{
+           margin:30px;
+           margin-right: 50px;
+           width:300px;
+           border:0px solid black;
+
+       }
+   #icons3{
+       float:left;
+       font-size: 25px;
+       margin-right:10px;
+   }
+   #icons4{
+       float:left;
+       font-size: 25px;
+       margin-right:10px;
+   }
+   #icons5{
+       float:left;
+       font-size: 25px;
+       margin-right:10px;
+   }
+   #download>a{
+       color:black;
+      
+   }
+   #fin{
+       width:97%;
+       display:flex;
+       flex-direction: row;
+   }
+   #finimg{
+       width:50px;
+       height:50px;
+       margin:2px 15px 2px 5px;
+   }
+   #finimg>img{
+       width: 100%;
+   }
+   #social{
+       margin-left: 1150px;
+       margin-top: 8px;
+   }
+   
+   
+   
+    </style>
+</head>
+<body>
+    <div class="navbar">
+    <div class="navbarone">
+        <img src="data:image/png;base64,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"/>
+    </div>
+
+    <div class="navbartwo">
+        <div class="dropdown">
+            <button class="dropbtn">WOMEN</button>
+            <div class="dropdown-content">
+              <a href="store2.html">All clothing &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Jackets </a>   
+              <a href="store2.html">Beachwear&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;Knitwear</a>
+              <a href="store2.html">Link Dresses&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Bags</a>
+              <a href="store2.html">Tops</a>
+              <a href="store2.html">Skirts</a>
+              <a href="store2.html">Jeans</a>
+              <a href="store2.html">Undergarments</a>
+              <a href="store2.html">Footwear</a>
+            </div>
+    </div>
+    
+    <div class="dropdown">
+        <button class="dropbtn">MEN</button>
+        <div class="dropdown-content">
+          <a href="store1.html">All clothing&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Jackets  </a>
+          <a href="store1.html">Beachwear&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;Knitwear</a>
+          <a href="store1.html">Dresses&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Wallets</a>
+          <a href="store1.html">Shirts&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Belts</a>
+          <a href="store1.html">T-shirts</a>
+          <a href="store1.html">Jeans</a>
+          <a href="store1.html">Undergarments</a>
+          <a href="store1.html">Footwear</a>
+        </div>
+    </div>
+    
+    <div class="dropdown">
+        <button class="dropbtn">KIDS</button>
+        <div class="dropdown-content">
+          <a href="store3.html">All clothing </a>
+          <a href="store3.html">Fancy dress</a>
+          <a href="store3.html">Link Dresses</a>
+          <a href="store3.html">Tops</a>
+          <a href="store3.html">Skirts</a>
+          <a href="store3.html">Jeans</a>
+          <a href="store3.html">Undergarments</a>
+          <a href="store3.html">Footwear</a>
+        </div>
+    </div>
+    
+    <div class="dropdown">
+        <button class="dropbtn">DESIGNERS</button>
+        <div class="dropdown-content">
+            <a href="#">Saint Lautent</a>
+            <a href="#">Gucci</a>
+            <a href="#">Dolce & Gabbana</a>
+            <a href="#">Prada</a>
+            <a href="#">Givenchy</a>
+            <a href="#">Vetements</a>
+            <a href="#">Valentino</a>
+            <a href="#">Stella Mccartney</a>
+            <a href="#">Neil Barrett</a>
+        </div>
+    </div>
+    
+    <div class="dropdown">
+        <button class="dropbtn">COUPONS</button>
+        <div class="dropdown-content">
+          <a href="#">Festive sale - use MASAI300 or DIWALI300</a>
+          <a href="#">Coupons-SALEMODE(Rs.500 off)</a>
+          <a href="#">Coupons-FUN500</a>
+          
+        </div>
+    </div>
+
+    <div class="dropdown">
+        <button class="dropbtn">WHY MODESENS</button>
+        <div class="dropdown-content">
+          <a href="https://modesens.com/about/">About Us</a>
+          
+          
+        </div>
+    </div>
+
+    </div>
+      
+    <div class="navbarthree">
+        <div>
+            <div class="dropdown">
+                <button class="dropbtn" id="dest">DESTINATION</button>
+                <div class="dropdown-content">
+                    <a href="#">USA</a>
+                    <a href="#">UK</a>
+                    <a href="#">INDIA</a>
+                    <a href="#">FRANCE</a>
+                    <a href="#">GERMANY</a>
+                   
+                </div>
+            </div>
+        </div>
+        <div>
+          <a href="signuppage.html" target="blank"><i class="material-icons" id="icons1" >account_circle</i></a>
+        </div>
+        <div id="searchwala">
+        <i class="material-icons" id="icons2">search</i> <input type="search" id="searchbar" placeholder="SEARCH"/>
+    </div>
+    </div>
+               
+            </div>
+        </div>
+    </div>    
+</div>
+
+
+<div class="middlebody">
+    <div id="middlebodyone">
+        <a href="store1.html">
+        <img src="https://cdn.modesens.com/banner/20211108-modesens-FGucci-1140x400.jpg" />
+        <h2 id="hello">GO SHOPPING &xrarr;</h2>
+    </a>
+    </div>
+</div>
+
+<div id="middlebody2">
+    <div>
+        <img src="https://cdn.modesens.com/media/114859123">
+        <a href="store1.html"><h1>Shop for MEN</h1></a>
+    </div>
+    <div>
+        <img src="https://image.s5a.com/is/image/saks/0400014095528_HYDRANGEAFLORAL?wid=972&hei=1296&fmt=jpeg&qlt=90%2C0&op_sharpen=1&resMode=trilin&op_usm=0.8%2C1.0%2C6%2C0&iccEmbed=0">
+        <a href="store2.html"> <h1>Shop for WOMEN</h1></a>
+    </div>
+    <div>
+        <img src="https://cdn.modesens.com/media/112926910">
+        <a href="store3.html"> <h1>Shop for KIDS</h1></a>
+    </div>
+    
+</div>
+
+
+<div class="middle2">
+    <div>
+        <a href="https://modesens.com/blog/clot-the-brand-that-built-a-bridge-between-east-and-west-8594/" target=”_blank”><img src="https://cdn.modesens.com/banner/20211104-modesens-MCashmere-364x484.jpg" id="img1"></a>
+        <h2>BLOG BY SEVEN STORE</h2>
+        <h3>Clot between east & west</h3>
+       <a href="https://modesens.com/blog/clot-the-brand-that-built-a-bridge-between-east-and-west-8594/" target=”_blank”> <button >Read Now</button></a> 
+    </div>
+   
+    <div>
+        <a href="https://modesens.com/blog/rave-one-a-photographic-history-of-the-hacienda-8573/" target=”_blank”><img src="https://cdn.modesens.com/banner/20211022-modesens-Msevenstore-364x484.jpg " id="img2"></a>
+        <h2>BLOG BY SEVEN STORE</h2>
+        <h3>History of Hacienda</h3>
+        <a href="https://modesens.com/blog/rave-one-a-photographic-history-of-the-hacienda-8573/" target=”_blank”> <button >Read Now</button></a> 
+        </div></a>
+
+
+</div>
+
+<div class="middle3">
+<div>
+    <h2>Download the Modsens<br/>Mobile app</h2>
+    <h3>A seamless experience that takes your<br/>style to the next level</h3>
+    
+    <img src="https://cdn.modesens.com/static/img/20180905downloadleft.png">
+    <a href="https://play.google.com/store/apps/details?id=com.modesens.androidapp&hl=en_IN&gl=US"  target=”_blank”><button>Download Now</button></a>
+</div>
+<div>
+    <h2>Install the Modsens <br/>browser extension</h2>
+    <h3>Get timely, accurate product information<br/>
+        every time you browse.</h3>
+      
+    <img src="https://lh3.googleusercontent.com/ni5ZPWKNh1H4T28MO2S6a2kh2DYFQJbtqVCzzPdNgeNxLJcwPecN_hNVZtfy47jRuniw41q9JebELWDyiCW0nW5w9Q=w640-h400-e365-rj-sc0x00ffffff">
+    <a href="https://chrome.google.com/webstore/detail/modesens-shopping-assista/cmfmhegpbogfmojekmidappigcfbgbcb/"  target=”_blank”><button id="thebut">Download Now</button></a>
+</div>
+</div>
+
+<div class="bottom">
+
+    <div>
+        <h2>CUSTOMER CARE</h2>
+        <h4>Shopper Protection</h4>
+        <h4>Loyalty Program</h4>
+        <h4>Help Center</h4>
+        <h4>Size Guides</h4>
+        <h4>Contact Us</h4>
+    </div>
+    <div>
+        <h2>INFORMATION</h2>
+        <h4>About Us</h4>
+        <h4>Influencer Program</h4>
+        <h4>Partner Stores</h4>
+        <h4>Sitemap</h4>
+        
+    </div>
+    <div>
+        <h2>LEGAL</h2>
+        <h4>Terms of Use</h4>
+        <h4>Disclosure</h4>
+        <h4>Privacy Policy</h4>
+        <h4>Community Guidelines</h4>
+        
+    </div>
+    
+    <div id="download">
+        <h2>CONNECT WITH US</h2>
+        <a href="https://play.google.com/store/apps/details?id=com.modesens.androidapp&hl=en_IN&gl=US" target="blank">
+            <span><i class="material-icons" id="icons3">phone_android</i><h4 id="android">Modesans Android App</h4></span>
+        </a>
+        <a href="https://apps.apple.com/us/app/modesens-shopping-assistant/id976201094" target="blank">
+            <span><i class="material-icons" id="icons4">phone_iphone</i><h4 id="ios">Modesans iOS App</h4></span>
+        </a>
+        <a href="https://chrome.google.com/webstore/detail/modesens-shopping-assista/cmfmhegpbogfmojekmidappigcfbgbcb?hl=en" target="blank">
+            <span><i class="material-icons" id="icons5">open_in_browser</i><h4 id="web">Modesans Web extension</h4></span>
+        </a>
+       </div>
+</div>
+
+<div id="fin">
+    <div id="finimg"><img src="https://cdn.modesens.com/static/img/20180905footer_logo.svg"></div>
+  <div><h4>(c),2021,ModeSens Inc</h4></div>
+  <div id="social">
+  
+ <a href="https://www.pinterest.com/modesens/" target="blank"><img src="https://cdn.modesens.com/static/img/20181008footer-pit.svg"></a>
+ <a href="https://twitter.com/modesens" target="blank"><img src="https://cdn.modesens.com/static/img/20181008footer-tt.svg"></a>
+
+ 
+
+  </div>
+</div>
+</body>
+</html>
+
+
+
+<script>
+    var iOne = document.getElementById('clickableimg');
+    iOne.setAttribute('click',anotherpage())
+
+    function anotherpage(){
+        window.location.href = "store.html"
+    }
+</script>

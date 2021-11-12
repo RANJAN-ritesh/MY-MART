@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Admin Page</h1>
+    <form id="form">
+        <input id="name" type="text" placeholder="enter name"/>
+        <input id="price" type="password" placeholder="enter password"/>
+        <select id="select">
+            <option value="tee">tee</option>
+            <option value="shoes">shoes</option>
+            <option value="shirt">shirt</option>
+        </select>
+        <input id="img" type="text" placeholder="enter image url">
+        <input type="submit"/>
+    </form>
+</body>
+</html>
+
+<script>
+    document.querySelector('form').addEventListener('submit',addItem)
+    var prod = JSON.parse(localStorage.getItem('shoppingBag')) || []
+
+    function addItem(event){
+        event.preventDefault();
+        console.log('here');
+        console.log(form);
+
+        var productObj = {
+            name: form.name.value,
+            price: form.price.value,
+            type: form.select.value,
+            image_url:form.img.value,
+        };
+        console.log(productObj);
+        prod.push(productObj);
+        localStorage.setItem('shoppingBag',JSON.stringify(prod))
+    }
+</script>
