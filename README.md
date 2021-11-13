@@ -22,3 +22,6 @@ The construct week is a fun time we get to used all the skills we have learnt so
 I have provide the Git link for the project so do check it out.
 
 Thank You.
+
+Also checkout my medium article on the same :-
+https://medium.com/@riteshranjansingh123/cloning-modesens-com-ebd1137fb08
