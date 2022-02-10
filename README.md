@@ -1,9 +1,9 @@
-# MODESENS
+# MY MART
 My Unit 2 construct week project.
 
 Hi there, Myself Ritesh Ranjan ,currently we had a interesting Construct week at Masai School .
 Basically , the construct week comes at the end of our units during which we use all the concepts learnt during the unit to create viable products and prove out mettle.
-This construct week(Unit 2) I got the project to clone Modesens.com which is a fashionwear website.
+This construct week(Unit 2) I got the project to clone Modesens.com which is a fashionwear website so i took inspiration from the website and created MY MART.
 
 
 THE PROCESS AND PRODUCT:-
@@ -13,7 +13,7 @@ the cart.
 
 
 TOOLS USED:-
-The tools used for the project were HTML, Node Js ,CSS.
+The tools used for the project were HTML, JS ,CSS.
 The IDE use was VS code and finally the GIT extension was GITHUB.
 
 
@@ -23,5 +23,3 @@ I have provide the Git link for the project so do check it out.
 
 Thank You.
 
-Also checkout my medium article on the same :-
-https://medium.com/@riteshranjansingh123/cloning-modesens-com-ebd1137fb08
