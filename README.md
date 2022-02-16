@@ -21,5 +21,8 @@ CONCLUSION:-
 The construct week is a fun time we get to used all the skills we have learnt so far and see it taking shape into some beautiful and viable outcomes.
 I have provide the Git link for the project so do check it out.
 
+//#Working of the project :
+ run the index.html file to ented the signup page and from there the whole file will become accessible.
+
 Thank You.
 
