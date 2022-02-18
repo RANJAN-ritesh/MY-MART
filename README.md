@@ -1,5 +1,5 @@
 # MY MART
-My Unit 2 construct week project.
+My Mart in a clothing based E-com platform ,Developed with HTML,CSS and JS.
 
 Hi there, Myself Ritesh Ranjan ,currently we had a interesting Construct week at Masai School .
 Basically , the construct week comes at the end of our units during which we use all the concepts learnt during the unit to create viable products and prove out mettle.
